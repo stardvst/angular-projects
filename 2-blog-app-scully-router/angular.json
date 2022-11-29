@@ -2,6 +2,7 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
+  "defaultProject": "2-blog-app-scully-router",
   "projects": {
     "2-blog-app-scully-router": {
       "projectType": "application",
