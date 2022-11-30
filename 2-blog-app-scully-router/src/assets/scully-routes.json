@@ -1,0 +1,19 @@
+[
+  { "route": "/contact" },
+  { "route": "/articles" },
+  {
+    "route": "/posts/2022-11-29-posts",
+    "title": "2022-11-29-posts",
+    "description": "blog description",
+    "published": true,
+    "sourceFile": "2022-11-29-posts.md"
+  },
+  {
+    "route": "/posts/angular-and-scully",
+    "title": "Angular and Scully",
+    "description": "blog description",
+    "published": true,
+    "sourceFile": "angular-and-scully.md"
+  },
+  { "route": "/" }
+]
