@@ -17,9 +17,9 @@ export class IssueEditComponent implements OnInit {
 
   ngOnInit(): void {
     this.issueForm = this.builder.group({
-      title: ['', Validators.required],
-      description: [''],
-      priority: ['', Validators.required],
+      title: [this.issue?.title, Validators.required],
+      description: [this.issue?.description],
+      priority: [this.issue?.priority, Validators.required],
     });
   }
 
@@ -29,7 +29,9 @@ export class IssueEditComponent implements OnInit {
       return;
     }
 
-    this.issueService.editIssue(this.issueForm?.value);
+    // spread order is important
+    const updatedIssue = { ...this.issue, ...this.issueForm?.value };
+    this.issueService.editIssue(updatedIssue);
     this.formClose.emit();
   }
 }
