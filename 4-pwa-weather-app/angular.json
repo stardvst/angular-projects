@@ -106,6 +106,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "4-pwa-weather-app:build:production",
+            "firebaseProject": "pwa-weather-app-91478",
+            "firebaseHostingSite": "pwa-weather-app-91478"
+          }
         }
       }
     }
