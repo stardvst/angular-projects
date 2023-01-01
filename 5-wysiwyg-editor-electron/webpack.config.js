@@ -2,13 +2,7 @@ const path = require('path');
 const src = path.join(process.cwd(), 'src', 'electron');
 
 module.exports = {
-  mode: 'development',
-  devtool: 'source-map',
   entry: path.join(src, 'main.ts'),
-  output: {
-    path: path.join(process.cwd(), 'dist', '5-wysiwyg-editor-electron'),
-    filename: 'shell.js',
-  },
   module: {
     rules: [
       {
